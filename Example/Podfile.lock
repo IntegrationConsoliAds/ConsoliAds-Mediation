@@ -1,0 +1,16 @@
+PODS:
+  - ConsoliAds-Mediation (0.1.0)
+
+DEPENDENCIES:
+  - ConsoliAds-Mediation (from `../`)
+
+EXTERNAL SOURCES:
+  ConsoliAds-Mediation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ConsoliAds-Mediation: b59a27723d445c8d25b1eb82928ac1f0236ecafb
+
+PODFILE CHECKSUM: a91a0bb7d67b3d06881c44f0b4a3059aad92fc8d
+
+COCOAPODS: 1.11.2

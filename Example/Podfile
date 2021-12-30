@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ConsoliAds-Mediation_Tests' do
+  pod 'ConsoliAds-Mediation', :path => '../'
+  
+  
+end

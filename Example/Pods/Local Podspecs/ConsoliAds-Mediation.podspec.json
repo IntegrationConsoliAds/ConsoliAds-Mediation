@@ -1,0 +1,22 @@
+{
+  "name": "ConsoliAds-Mediation",
+  "version": "0.1.0",
+  "summary": "A short description of ConsoliAds-Mediation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Wazma Ali/ConsoliAds-Mediation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wazma Ali": "wazma.ali@consoliads.com"
+  },
+  "source": {
+    "git": "https://github.com/Wazma Ali/ConsoliAds-Mediation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ConsoliAds-Mediation/Classes/**/*"
+}

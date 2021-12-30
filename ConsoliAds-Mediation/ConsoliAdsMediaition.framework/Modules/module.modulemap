@@ -1,0 +1,22 @@
+framework module ConsoliAdsMediaition {
+  umbrella header "ConsoliAdsMediaition.h"
+
+  export *
+  module * { export * }
+  
+  header "AdNetworkManager.h"
+  header "CANativeAdRequestDelegate.h"
+  header "ConsoliAdsMediation.h"
+  header "CANativeAdRenderingDelegate.h"
+  header "CADelegate.h"
+  header "ConsoliAdsMediationDelegate.h"
+  header "ConsoliAdsMediationIconAdDelegate.h"
+  header "CAMediationConstants.h"
+  header "CAMediatedNativeAd.h"
+  header "CAMediatedBannerView.h"
+  header "AdNetwork.h"
+  header "ConsoliAdsMediaition.h"
+  header "CAAdNetworkInitializeListener.h"
+}
+
+
