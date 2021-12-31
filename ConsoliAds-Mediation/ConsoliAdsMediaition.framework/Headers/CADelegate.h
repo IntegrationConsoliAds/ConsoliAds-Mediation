@@ -29,26 +29,30 @@
 - (void)caOnAdClosed:(int)adNetworkName format:(int)format;
 
 - (void)caOnAdClick:(int)adNetworkName format:(int)format;
-//
+
 - (void)caOnRewardedVideoAdCompleted:(int)adNetworkName;
-//
+
 - (void)caOnAppOpenAdLoadFailed:(int)adNetworkName orientation:(UIInterfaceOrientation)orientation;
-//
+
 - (void)caOnAppOpenAdLoadSuccess:(int)adNetworkName;
-//
+
 - (void)caOnAppOpenAdShowSuccess:(int)adNetworkName;
-//
+
 - (void)caOnAppOpenAdClosed:(int)adNetworkName;
-//
+
 - (void)caOnAppOpenAdShowFailed:(int)adNetworkName;
-//
+
 - (void)caOnBannerAdLoadFailed:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner viewController:(UIViewController*_Nonnull)viewController;
-//
+
 - (void)caOnBannerAdClose:(int)adNetworkName bannerView:(CAMediatedBannerView*_Nonnull)bannerView;
-//
+
 - (void)caOnBannerAdLoadSuccess:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner refreshed:(BOOL)isRefresh;
-//
+
+- (void)caOnBannerAdClick:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView;
+
 - (void)caOnNativeLoadFailed:(int)adNetworkName viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
+
+- (void)caChangeAdNetworkLoadState:(int)adNetworkName state:(int)adNetworkState;
 
 @end
 
