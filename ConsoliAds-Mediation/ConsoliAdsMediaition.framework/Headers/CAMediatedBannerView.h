@@ -26,6 +26,7 @@
 - (void)setCustomBannerSize:(CGSize)size;
 - (void)destroyBanner;
 - (BOOL)canLoadBanner: (PlaceholderName)placeholderName;
+- (void)setBannerAdNetwork:(AdNetwork*) adnetwork;
 - (void)setAdNetwork:(AdNetwork*)adNetwork placHolderName:(PlaceholderName)placeholderName;
 - (AdNetwork*)getAdnetwork;
 - (void)setBannerState:(BannerState)bannerState;

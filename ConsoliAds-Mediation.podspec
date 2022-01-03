@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-Mediation'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'ConsoliAds-Mediation is used to mediate any adntework you want to integrate in your app'
 
 # This description is used to generate tags and improve search results.
