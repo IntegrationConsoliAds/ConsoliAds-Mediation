@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//#import "CANativeAdRequestDelegate.h"
-//#import "CANativeAdRenderingDelegate.h"
 #import "ConsoliAdsMediationDelegate.h"
 #import "ConsoliAdsMediationIconAdDelegate.h"
 #import "CADelegate.h"
@@ -35,11 +33,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic) BannerSize bannerSize;
 
+@property(nonatomic) PlaceholderName shownForPlaceholder;
+
 - (BOOL)isValidAdID:(NSString*)adID;
 
 -(void)runOnUIThread:(void (^)(void))completionHandler;
 
 - (void)updateHastable:(CAMediatedBannerView*)mediatedBannerView;
+
+- (CGRect)getBannerFrameWithSize:(BannerSize)adSize position:(BannerPosition)adPosition viewSize:(CGSize)viewSize;
 
 @end
 

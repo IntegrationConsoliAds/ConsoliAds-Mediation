@@ -69,4 +69,16 @@ typedef enum : NSInteger {
     Completed = 3,
     Failed = 4
 } RequestState;
+
+typedef enum : NSInteger {
+    
+    Top = 0,
+    Bottom = 1,
+    TopLeft = 2,
+    TopRight = 3,
+    BottomLeft = 4,
+    BottomRight = 5,
+    Center = 6
+    
+}BannerPosition;
 #endif /* CAMediationConstants_h */

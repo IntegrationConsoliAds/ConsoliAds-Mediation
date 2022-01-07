@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CAMediationConstants.h"
+#import "MediationInAppDetails.h"
+#import "MediationInAppError.h"
 //#import "CAInAppDetails.h"
 //#import "CAInAppError.h"
 
@@ -50,9 +52,9 @@
 
 @optional
 
-//- (void)onInAppPurchaseFailed:(CAInAppError*)error;
-//- (void)onInAppPurchaseSuccess:(CAInAppDetails*)product;
-//- (void)onInAppPurchaseRestored:(CAInAppDetails*)product;
+- (void)onInAppPurchaseFailed:(MediationInAppError*)error;
+- (void)onInAppPurchaseSuccess:(MediationInAppDetails*)product;
+- (void)onInAppPurchaseRestored:(MediationInAppDetails*)product;
 
 @end
 

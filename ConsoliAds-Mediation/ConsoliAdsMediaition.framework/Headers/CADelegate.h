@@ -10,6 +10,8 @@
 
 #import "CAMediatedBannerView.h"
 #import "CANativeAdRequestDelegate.h"
+#import "MediationInAppError.h"
+#import "MediationInAppDetails.h"
 
 
 @class AdNetwork;
@@ -53,6 +55,18 @@
 - (void)caOnNativeLoadFailed:(int)adNetworkName viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
 
 - (void)caChangeAdNetworkLoadState:(int)adNetworkName state:(int)adNetworkState;
+
+- (void)caOnAdClickWithProdId:(int)adNetworkName format:(int)format featureId:(NSString *)featureId;
+
+- (void)caInAppPurchaseSuccess:(MediationInAppDetails*)product;
+
+- (void)caInAppPurchaseFailed:(MediationInAppError*)error;
+
+- (void)caInAppPurchaseRestored:(MediationInAppDetails*)product;;
+
+- (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*)mediatedBannerView featureId:(NSString *)featureId;
+
+-(void) caOnIconAdRefresh;
 
 @end
 

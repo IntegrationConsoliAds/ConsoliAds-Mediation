@@ -28,3 +28,6 @@ FOUNDATION_EXPORT const unsigned char ConsoliAdsMediaitionVersionString[];
 #import <ConsoliAdsMediaition/CAMediationConstants.h>
 #import <ConsoliAdsMediaition/CAMediatedNativeAd.h>
 
+#import <ConsoliAdsMediaition/MediationInAppError.h>
+#import <ConsoliAdsMediaition/MediationInAppDetails.h>
+
