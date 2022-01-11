@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-Mediation'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = 'ConsoliAds-Mediation is used to mediate any adntework you want to integrate in your app'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'ConsoliAds-Mediation pod is used to get consiliads mediation framewok inorder to make CA-adpters work and your app will be mediated with other adnetwroks.'
+  'ConsoliAds-Mediation pod is used to get consiliads mediation framewok inorder to make CA-adpters work and your app will be mediated with other adnetwroks. Test Build.'
                        DESC
 
   s.homepage         = 'https://github.com/IntegrationConsoliAds/ConsoliAds-Mediation'
