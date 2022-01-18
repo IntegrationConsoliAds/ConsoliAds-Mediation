@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ConsoliAdsMediationDelegate.h"
 #import "ConsoliAdsMediationIconAdDelegate.h"
-#import "CADelegate.h"
+#import "CAAdNetworkDelegate.h"
 #import "CAMediatedBannerView.h"
 #import "CAMediationConstants.h"
 
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
     BOOL _isInitialized;
 }
 
-@property (nonatomic , weak) id<CADelegate> caDelegate;
+@property (nonatomic , weak) id<CAAdNetworkDelegate> caDelegate;
 
 @property(nonatomic) BOOL isInitialized;
 

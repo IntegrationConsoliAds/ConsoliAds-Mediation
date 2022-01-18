@@ -24,7 +24,7 @@ FOUNDATION_EXPORT const unsigned char ConsoliAdsMediaitionVersionString[];
 #import <ConsoliAdsMediaition/CANativeAdRenderingDelegate.h>
 #import <ConsoliAdsMediaition/ConsoliAdsMediationDelegate.h>
 #import <ConsoliAdsMediaition/ConsoliAdsMediationIconAdDelegate.h>
-#import <ConsoliAdsMediaition/CADelegate.h>
+#import <ConsoliAdsMediaition/CAAdNetworkDelegate.h>
 #import <ConsoliAdsMediaition/CAMediationConstants.h>
 #import <ConsoliAdsMediaition/CAMediatedNativeAd.h>
 

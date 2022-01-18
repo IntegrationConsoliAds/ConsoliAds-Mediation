@@ -16,7 +16,7 @@
 
 @class AdNetwork;
 
-@protocol CADelegate <NSObject>
+@protocol CAAdNetworkDelegate <NSObject>
 
 - (void)SaveAdNetworkRequest:(AdNetwork *_Nonnull)adNetwork;
 
@@ -56,15 +56,15 @@
 
 - (void)caChangeAdNetworkLoadState:(int)adNetworkName state:(int)adNetworkState;
 
-- (void)caOnAdClickWithProdId:(int)adNetworkName format:(int)format featureId:(NSString *)featureId;
+- (void)caOnAdClickWithProdId:(int)adNetworkName format:(int)format featureId:(NSString *_Nullable)featureId;
 
-- (void)caInAppPurchaseSuccess:(MediationInAppDetails*)product;
+- (void)caInAppPurchaseSuccess:(MediationInAppDetails*_Nonnull)product;
 
-- (void)caInAppPurchaseFailed:(MediationInAppError*)error;
+- (void)caInAppPurchaseFailed:(MediationInAppError*_Nonnull)error;
 
-- (void)caInAppPurchaseRestored:(MediationInAppDetails*)product;;
+- (void)caInAppPurchaseRestored:(MediationInAppDetails*_Nonnull)product;;
 
-- (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*)mediatedBannerView featureId:(NSString *)featureId;
+- (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView featureId:(NSString *_Nullable)featureId;
 
 -(void) caOnIconAdRefresh;
 
