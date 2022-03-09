@@ -30,16 +30,22 @@
 - (void)showInterstitial:(PlaceholderName)placeholderName viewController:(UIViewController*_Nonnull)viewController;
 - (void)showInterstitial:(UIViewController*_Nonnull)viewController;
 - (void)showRewardedVideo:(PlaceholderName)placeholderName viewController:(UIViewController* _Nonnull)viewController;
+- (void)showRewardedInterstitial:(PlaceholderName)placeholderName viewController:(UIViewController*)viewController;
+- (void)showRewardedInterstitial:(UIViewController*)viewController;
 - (void)showRewardedVideo:(UIViewController* _Nonnull)viewController;
 - (void)hideAllAds;
 - (void)loadRewarded;
+- (void)loadRewardedInterstitial;
+- (void)loadRewardedInterstitial:(PlaceholderName)placeholderName;
 - (BOOL)isInterstitialAvailable;
 - (BOOL)isInterstitialAvailable:(PlaceholderName)placeholderName;
+- (BOOL)isRewardedInterstitialAvailable:(PlaceholderName)placeholderName;
 - (BOOL)isRewardedVideoAvailable;
 - (BOOL)isRewardedVideoAvailable:(PlaceholderName)placeholderName;
 - (void)setDelegate:(id<ConsoliAdsMediationDelegate>_Nonnull)delegate;
 - (void)setInterstitialAdDelegate:(id<ConsoliAdsMediationInterstitialAdDelegate>_Nonnull)delegate;
 - (void)setRewardedAdDelegate:(id<ConsoliAdsMediationRewardedAdDelegate>_Nonnull)delegate;
+-(void)setRewardedInterstitialAdDelegate:(id<ConsoliAdsMediationRewardedInterstitialAdDelegate>_Nullable)delegate;
 - (void)addAdmobTestDevice:(NSString *_Nonnull)deviceId;
 - (void)loadNativeAdInViewController:(UIViewController *_Nonnull)viewController
                          placeholder:(PlaceholderName)placeholderName

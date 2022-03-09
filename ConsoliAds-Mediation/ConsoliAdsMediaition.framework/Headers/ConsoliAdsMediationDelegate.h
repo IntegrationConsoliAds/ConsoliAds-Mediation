@@ -65,8 +65,19 @@
 - (void)onAppOpenAdLoaded:(PlaceholderName)placeholderName;
 - (void)onAppOpenAdFailToLoad:(PlaceholderName)placeholderName;
 - (void)onAppOpenAdShown:(PlaceholderName)placeholderName;
- - (void)onAppOpenAdClicked;
+- (void)onAppOpenAdClicked;
 - (void)onAppOpenAdClosed:(PlaceholderName)placeholderName;
 - (void)onAppOpenAdFailedToShow:(PlaceholderName)placeholderName;
+
+@end
+@protocol ConsoliAdsMediationRewardedInterstitialAdDelegate <NSObject>
+
+@optional
+- (void)onRewardedInterstitialAdLoaded:(PlaceholderName)placeholderName;
+- (void)onRewardedInterstitialAdFailToLoad:(PlaceholderName)placeholderName;
+- (void)onRewardedInterstitialAdShown:(PlaceholderName)placeholderName;
+- (void)onRewardedInterstitialAdCompleted:(PlaceholderName)placeholderName;
+- (void)onRewardedInterstitialAdFailToShow:(PlaceholderName)placeholderName;
+- (void)onRewardedInterstitialAdClosed:(PlaceholderName)placeholderName;
 
 @end

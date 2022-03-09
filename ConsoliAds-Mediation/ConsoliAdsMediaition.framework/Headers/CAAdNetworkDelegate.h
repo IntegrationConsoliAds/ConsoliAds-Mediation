@@ -32,6 +32,8 @@
 
 - (void)caOnAdClick:(int)adNetworkName format:(int)format;
 
+- (void)caOnAdCompleted:(int)adNetworkName format:(int)format;
+
 - (void)caOnRewardedVideoAdCompleted:(int)adNetworkName;
 
 - (void)caOnAppOpenAdLoadFailed:(int)adNetworkName orientation:(UIInterfaceOrientation)orientation;
@@ -67,6 +69,20 @@
 - (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView featureId:(NSString *_Nullable)featureId;
 
 -(void) caOnIconAdRefresh;
+
+- (void)caOnRewardedInterstitialAdLoaded:(PlaceholderName)placeholderName;
+
+- (void)caOnRewardedInterstitialAdFailToLoad:(PlaceholderName)placeholderName;
+
+- (void)caOnRewardedInterstitialAdShown:(PlaceholderName)placeholderName;
+
+- (void)caOnRewardedInterstitialAdCompleted:(PlaceholderName)placeholderName;
+
+- (void)caOnRewardedInterstitialAdClicked:(NSString *_Nonnull)featureId;
+
+- (void)caOnRewardedInterstitialAdFailToShow:(PlaceholderName)placeholderName;
+
+- (void)caOnRewardedInterstitialAdClosed:(PlaceholderName)placeholderName;
 
 @end
 
