@@ -18,45 +18,52 @@
 
 @protocol CAAdNetworkDelegate <NSObject>
 
-- (void)SaveAdNetworkRequest:(AdNetwork *_Nonnull)adNetwork;
+- (void)SaveAdNetworkRequest:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdLoadFailed:(int)adNetworkName format:(int)format;
+- (void)caOnAdLoadFailed:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdLoadSuccess:(int)adNetworkName format:(int)format;
+- (void)caOnAdLoadSuccess:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdShowSuccess:(int)adNetworkName format:(int)format;
+- (void)caOnAdShowSuccess:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdShowFailed:(int)adNetworkName format:(int)format;
+- (void)caOnAdShowFailed:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdClosed:(int)adNetworkName format:(int)format;
+- (void)caOnAdClosed:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdClick:(int)adNetworkName format:(int)format;
+- (void)caOnAdClick:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAdCompleted:(int)adNetworkName format:(int)format;
+- (void)caOnAdCompleted:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnRewardedVideoAdCompleted:(int)adNetworkName;
+- (void)caOnRewardedVideoAdCompleted:(AdNetwork *_Nonnull)adNetwork;//
 
-- (void)caOnAppOpenAdLoadFailed:(int)adNetworkName orientation:(UIInterfaceOrientation)orientation;
+//AppOpenAd
+- (void)caOnAppOpenAdLoadFailed:(AdNetwork *_Nonnull)adNetwork orientation:(UIInterfaceOrientation)orientation;
 
-- (void)caOnAppOpenAdLoadSuccess:(int)adNetworkName;
+- (void)caOnAppOpenAdLoadSuccess:(AdNetwork *_Nonnull)adNetwork;
 
-- (void)caOnAppOpenAdShowSuccess:(int)adNetworkName;
+- (void)caOnAppOpenAdShowSuccess:(AdNetwork *_Nonnull)adNetwork;
 
-- (void)caOnAppOpenAdClosed:(int)adNetworkName;
+- (void)caOnAppOpenAdClosed:(AdNetwork *_Nonnull)adNetwork;
 
-- (void)caOnAppOpenAdShowFailed:(int)adNetworkName;
+- (void)caOnAppOpenAdShowFailed:(AdNetwork *_Nonnull)adNetwork;
+//
 
-- (void)caOnBannerAdLoadFailed:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner viewController:(UIViewController*_Nonnull)viewController;
+//Banner
+- (void)caOnBannerAdLoadFailed:(AdNetwork *_Nonnull)adNetwork mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner viewController:(UIViewController*_Nonnull)viewController;
 
-- (void)caOnBannerAdClose:(int)adNetworkName bannerView:(CAMediatedBannerView*_Nonnull)bannerView;
+- (void)caOnBannerAdClose:(AdNetwork *_Nonnull)adNetwork bannerView:(CAMediatedBannerView*_Nonnull)bannerView;
 
-- (void)caOnBannerAdLoadSuccess:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner refreshed:(BOOL)isRefresh;
+- (void)caOnBannerAdLoadSuccess:(AdNetwork *_Nonnull)adNetwork mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner refreshed:(BOOL)isRefresh;
 
-- (void)caOnBannerAdClick:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView;
+- (void)caOnBannerAdClick:(AdNetwork *_Nonnull)adNetwork mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView;
 
-- (void)caOnNativeLoadFailed:(int)adNetworkName viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
+- (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView featureId:(NSString *_Nullable)featureId;
 
-- (void)caChangeAdNetworkLoadState:(int)adNetworkName state:(int)adNetworkState;
+//
+
+- (void)caOnNativeLoadFailed:(AdNetwork *_Nonnull)adNetwork viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
+
+- (void)caChangeAdNetworkLoadState:(AdNetwork*_Nonnull)adNetwork state:(int)adNetworkState;
 
 - (void)caOnAdClickWithProdId:(int)adNetworkName format:(int)format featureId:(NSString *_Nullable)featureId;
 
@@ -65,8 +72,6 @@
 - (void)caInAppPurchaseFailed:(MediationInAppError*_Nonnull)error;
 
 - (void)caInAppPurchaseRestored:(MediationInAppDetails*_Nonnull)product;;
-
-- (void)caOnBannerAdClickWithProdId:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBannerView featureId:(NSString *_Nullable)featureId;
 
 -(void) caOnIconAdRefresh;
 
