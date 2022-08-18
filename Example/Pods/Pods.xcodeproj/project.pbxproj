@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,8 @@
 		2ACD0769B90784080B081952E8098969 /* Pods-ConsoliAds-Mediation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FB52720E3B99FA36D9884150DBC567 /* Pods-ConsoliAds-Mediation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F453CECBBDF8F7F5F43DEE478F51DB2 /* ConsoliAds-Mediation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C328A5B8124C85A56CA6AFB936E6E3 /* ConsoliAds-Mediation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B38B70C34D0979D077BB555C3B041493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BA3D45F7277DD28A000E01D9 /* ConsoliAdsMediaition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3D45F6277DD28A000E01D9 /* ConsoliAdsMediaition.framework */; };
 		D98EF55F99C80426F97629305ED1F1BE /* ConsoliAds-Mediation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC85785F90368D5C112AB8EC91A08F8 /* ConsoliAds-Mediation-dummy.m */; };
+		FC58606628AE215800383CA2 /* ConsoliAdsMediaition.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC58606528AE215800383CA2 /* ConsoliAdsMediaition.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E4D6BDF09B39DE2E677542DE2517DB6 /* ConsoliAds-Mediation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ConsoliAds-Mediation.modulemap"; sourceTree = "<group>"; };
 		ACA20C63B4FE283B56AA61506507D6E6 /* Pods-ConsoliAds-Mediation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConsoliAds-Mediation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA3D45F6277DD28A000E01D9 /* ConsoliAdsMediaition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConsoliAdsMediaition.framework; path = "ConsoliAds-Mediation/ConsoliAdsMediaition.framework"; sourceTree = "<group>"; };
 		C0FEF93D2583D9FB5613681C2DB441B2 /* ConsoliAds-Mediation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ConsoliAds-Mediation.debug.xcconfig"; sourceTree = "<group>"; };
 		C49705607B91BCBA1DD3A5EECF45F762 /* ConsoliAds-Mediation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConsoliAds-Mediation-prefix.pch"; sourceTree = "<group>"; };
 		C6AF8CFA83EC03F142727A16BB71D2A2 /* ConsoliAds-Mediation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "ConsoliAds-Mediation.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -51,6 +50,7 @@
 		EDEC51B4A8130D228B82ADF6726B797B /* Pods-ConsoliAds-Mediation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConsoliAds-Mediation_Tests-dummy.m"; sourceTree = "<group>"; };
 		F81935578E0729E4B78FA0A44BEF7635 /* Pods-ConsoliAds-Mediation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ConsoliAds-Mediation_Tests.modulemap"; sourceTree = "<group>"; };
 		FAEFFA150BEC9BADCFAA587B70B98C5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FC58606528AE215800383CA2 /* ConsoliAdsMediaition.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ConsoliAdsMediaition.xcframework; path = "ConsoliAds-Mediation/ConsoliAdsMediaition.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3D45F7277DD28A000E01D9 /* ConsoliAdsMediaition.framework in Frameworks */,
+				FC58606628AE215800383CA2 /* ConsoliAdsMediaition.xcframework in Frameworks */,
 				B38B70C34D0979D077BB555C3B041493 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +144,7 @@
 		AFD88055C22E516EFFEB0DEEC47A839C /* ConsoliAds-Mediation */ = {
 			isa = PBXGroup;
 			children = (
-				BA3D45F6277DD28A000E01D9 /* ConsoliAdsMediaition.framework */,
+				FC58606528AE215800383CA2 /* ConsoliAdsMediaition.xcframework */,
 				1902F0C7A43E1AEE6F8E8D07F0346F53 /* Pod */,
 				29EF75E21FB523B4A7450B6BA4CAF309 /* Support Files */,
 			);
@@ -328,7 +328,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ConsoliAds-Mediation_Tests/Pods-ConsoliAds-Mediation_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ConsoliAds-Mediation_Tests/Pods-ConsoliAds-Mediation_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -399,7 +403,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -488,7 +493,11 @@
 				INFOPLIST_FILE = "Target Support Files/ConsoliAds-Mediation/ConsoliAds-Mediation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = mh_dylib;
 				MODULEMAP_FILE = "Target Support Files/ConsoliAds-Mediation/ConsoliAds-Mediation.modulemap";
 				PRODUCT_MODULE_NAME = ConsoliAds_Mediation;
@@ -520,7 +529,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ConsoliAds-Mediation_Tests/Pods-ConsoliAds-Mediation_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ConsoliAds-Mediation_Tests/Pods-ConsoliAds-Mediation_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -554,7 +567,11 @@
 				INFOPLIST_FILE = "Target Support Files/ConsoliAds-Mediation/ConsoliAds-Mediation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = mh_dylib;
 				MODULEMAP_FILE = "Target Support Files/ConsoliAds-Mediation/ConsoliAds-Mediation.modulemap";
 				PRODUCT_MODULE_NAME = ConsoliAds_Mediation;

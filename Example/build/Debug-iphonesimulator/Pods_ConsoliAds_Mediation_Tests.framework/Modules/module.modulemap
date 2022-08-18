@@ -1,0 +1,6 @@
+framework module Pods_ConsoliAds_Mediation_Tests {
+  umbrella header "Pods-ConsoliAds-Mediation_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

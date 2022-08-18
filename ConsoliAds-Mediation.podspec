@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-Mediation'
-  s.version          = '14.0.0-QA-1'
+  s.version          = '14.0.0'
   s.summary          = 'ConsoliAds-Mediation is used to mediate any adntework you want to integrate in your app in order to get Ad  servings.'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.vendored_frameworks = 'ConsoliAds-Mediation/ConsoliAdsMediaition.framework'
+  s.vendored_frameworks = 'ConsoliAds-Mediation/ConsoliAdsMediaition.xcframework'
   s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
 
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.static_framework = true
 end
