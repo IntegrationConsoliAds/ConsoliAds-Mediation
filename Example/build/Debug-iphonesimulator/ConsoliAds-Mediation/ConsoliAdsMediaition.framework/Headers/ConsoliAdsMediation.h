@@ -34,7 +34,7 @@
 - (void)showRewardedInterstitial:(UIViewController*)viewController;
 - (void)showRewardedVideo:(UIViewController* _Nonnull)viewController;
 - (void)hideAllAds;
-- (void)loadRewarded;
+- (void)loadRewardedVideo;
 - (void)loadRewardedInterstitial;
 - (void)loadRewardedInterstitial:(PlaceholderName)placeholderName;
 - (BOOL)isInterstitialAvailable;
@@ -66,7 +66,7 @@
 
 - (void)loadInterstitial:(PlaceholderName)placeholderName;
 
-- (void)loadRewarded:(PlaceholderName)placeholderName;
+- (void)loadRewardedVideo:(PlaceholderName)placeholderName;
 
 #pragma mark
 #pragma mark AppOpenAds
