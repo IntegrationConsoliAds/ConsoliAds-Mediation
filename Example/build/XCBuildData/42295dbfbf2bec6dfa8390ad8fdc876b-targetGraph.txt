@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+ConsoliAds-Mediation in Pods, no dependencies
+Pods-ConsoliAds-Mediation_Tests in Pods, depends on:
+ConsoliAds-Mediation in Pods (explicit)
